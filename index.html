@@ -6,9 +6,73 @@
   </head>
   <body>
     <form action="submit.php">
-      <label>What is your name?</label>
-      <input type="text" name="username">
+      <p>
+        <label>What is your name?</label>
+        <input type="text" name="username">
+      </p>
 
+      <p>
+        <label>What is your gender?</label>
+        <label>Male:
+          <input type="radio"
+            name="gender" value="male">
+        </label>
+        <label>Female:
+          <input type="radio"
+            name="gender" value="female">
+          </label>
+      </p>
+
+      <p>
+        <label>What is your password?</label>
+          <input type="password" name="pwd">
+      </p>
+
+      <p>
+        <label>Check all foods below that you like:</label>
+        <label>Tacos
+          <input type="checkbox"
+            name="tacos" value="on">
+        </label>
+        <label>Fried rice
+          <input type="checkbox"
+            name="friedrice" value="on">
+        </label>
+        <label>Catfish
+          <input type="checkbox"
+            name="catfish" value="on">
+        </label>
+        <label>Sandwiches
+          <input type="checkbox"
+            name="sandwiches" value="on">
+        </label>
+        <label>Burgers
+          <input type="checkbox"
+            name="burgers" value="on">
+        </label>
+        <label>Fries
+          <input type="checkbox"
+            name="fries" value="on">
+        </label>
+      </p>
+
+      <p>
+        <label>Which operating system do you use?</label>
+        <select name="os">
+          <option value="windows">Windows</option>
+          <option value="osx">OSX</option>
+          <option value="linux">Linux</option>
+          <option value="plan 9">Plan 9</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+
+      <p>
+        <label>Do you have any questions?</label>
+        <textarea name="comment"></textarea>
+      </p>
+
+      <input type="submit">
     </form>
   </body>
 </html>
